@@ -91,7 +91,10 @@ class App extends React.Component {
               />
             </div>
             <div className="twelve wide column">
-              <PetBrowser />
+              <PetBrowser 
+                onAdoptPet={this.handleAdoptPet} 
+                pets={this.state.pets} 
+              />
             </div>
           </div>
         </div>
