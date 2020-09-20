@@ -28,9 +28,9 @@ const Pet = ({ pet, onAdoptPet }) => {
         <div className="meta">
           <span className="date">{type}</span>
         </div>
-        <div className="extra content">
-          <button className="ui disabled button">Already adopted</button>
-          <button className="ui primary button">Adopt pet</button>
+        <div className="description">
+          <p>Age: {age}</p>
+          <p>Weight: {weight}</p>
         </div>
       </div>
     )
