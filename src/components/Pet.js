@@ -33,8 +33,20 @@ const Pet = ({ pet, onAdoptPet }) => {
           <p>Weight: {weight}</p>
         </div>
       </div>
-    )
-  }
+      <div className="extra content">
+        {isAdopted ? alreadyAdoptedButton : adoptPetButton}
+        {/* button */}
+        {/* 
+        {isAdopted === true &&
+          <button className="ui disabled button">Already adopted</button>
+        }
+        {isAdopted === false &&
+          <button className="ui primary button" onClick={() => onAdoptPet(id)}>Adopt pet</button>
+        }
+        */}
+      </div>
+    </div>
+  )
 }
 
 export default Pet
